@@ -292,3 +292,5 @@ smooth_links = () => {
   });
 
 };
+
+smooth_links();
