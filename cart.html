@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel-settings.js"></script>
+    <script src="js/scrolltoanchor.js" defer></script>
+    <script src="js/pdp-to-cart.js" defer></script>
+    <script src="js/cart.js" defer></script>
+  </head>
+
+<body>
+
+<!------------------------------------------------------------------------------
+RECTANGLE & NAVIGATION
+------------------------------------------------------------------------------->
+
+  <div id="rectangle" class="bg-black">
+    <div class="vertical-line"></div>
+  </div>
+
+  <nav class="navbar navbar-dark fixed-top bg-white c-black">
+    <div class="container-fluid">
+      
+      <div class="row w-100">
+        <div class="col-4 col-sm-8 col-md-9 col-lg-9 col-xl-9">
+          <a class="navbar-brand" href="index.html"><img class="navbar-logo" 
+            src="img/logo.png" alt="helsk logo"></a>
+        </div>
+
+        <div class="col-8 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+          <a href="cart.html"><img id="basket" class="basket-icon" 
+            src="img/basket-icon.png" alt="basket icon">
+            <div id="basket-items-n" class="bg-red c-white text-center">0</div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbar" aria-controls="navbar" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="bg-black"></span>
+            <span class="bg-black"></span>
+            <span class="bg-black"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row w-100 text-center">
+        <div class="col-12">
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto c-black">
+              <li class="nav-item" data-toggle="collapse" 
+                data-target=".navbar-collapse.show">
+                <a class="nav-link scroll-link" href="index.html#header">Home</a>
+              </li>
+              <li class="nav-item" data-toggle="collapse" 
+                data-target=".navbar-collapse.show">
+                <a class="nav-link scroll-link c-black"
+                  href="index.html#about">About Us</a>
+              </li>
+              <li class="nav-item" data-toggle="collapse" 
+                data-target=".navbar-collapse.show">
+                <a class="nav-link scroll-link c-black" 
+                  href="index.html#special-offer">Special Offer</a>
+              </li>
+              <li class="nav-item" data-toggle="collapse" 
+                data-target=".navbar-collapse.show">
+                <a class="nav-link scroll-link c-black" 
+                  href="index.html#products-list">Products</a>
+              </li>
+              <li class="nav-item" data-toggle="collapse" 
+                data-target=".navbar-collapse.show">
+                <a class="nav-link scroll-link c-black" 
+                  href="index.html#footer">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  
+<!------------------------------------------------------------------------------
+CART
+------------------------------------------------------------------------------->
+
+  <section id="cart-section">
+    <div class="cart-content pb-0">
+      <div id="cart-description" class="row justify-content-center text-center">
+        
+        <div class="offset-5 col-3">
+          <p class="mt-5 font-bold">Price/Product</p>
+        </div>
+        <div class="col-2 pl-15">
+          <p class="mt-5 font-bold">Qty</p>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div>
+        <div id="cart" class="text-center"></div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
