@@ -110,6 +110,14 @@ pdp = () => {
       show(pdp);
       hide_home();
 
+      // Scroll to the top of pdp page
+      let scroll_to_top_pdp = document.querySelectorAll(".section-title-left-pdp");
+
+      scroll_to_top_pdp.forEach(scroll => {
+        scroll.scrollIntoView();
+      })
+
+      // Back to the section from which the pdp was opened (product list/footer)
       btn_back.addEventListener("click", () => {
         hide(pdp);
         show_home();
@@ -267,6 +275,17 @@ pdp = () => {
           image_condition();
         });
       });
+
+      // Back to the section of home page from pdp
+      const smooth_link = document.querySelectorAll(".nav-link");
+        smooth_link.forEach(smooth => {
+          smooth.addEventListener("click", function (e) {
+            e.preventDefault();
+            hide(pdp)
+            show_home();
+          });
+        });
+      
       
     });
   };
@@ -275,7 +294,7 @@ pdp = () => {
 
 pdp();
 
-/* Smooth scroll - custom links*/
+/* Smooth scroll - custom links not nav-links*/
 
 smooth_links = () => {
 
@@ -294,3 +313,5 @@ smooth_links = () => {
 };
 
 smooth_links();
+
+ 

@@ -5,6 +5,8 @@ $(document).ready(function(){
     loop: false,
     margin: 290,
     dots: true,
+    mouseDrag: false,
+    touchDrag: false,
     responsive:{
       1500:{
         margin: 270
@@ -86,10 +88,11 @@ $(document).ready(function(){
   
   $("#smooth-link").on("click", function(e) {
     e.preventDefault();
-  
+    
     $("html, body").animate({
       scrollTop: $($.attr(this, "href")).offset().top
     }, 500);
   });
   
+  console.log($("#smooth-link"))
 });

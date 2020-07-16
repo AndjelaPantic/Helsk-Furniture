@@ -1719,6 +1719,7 @@ hr {
   .section-title-left {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: transparent !important;
   }
   
   .section-content-left {
@@ -1775,6 +1776,10 @@ hr {
   .card {
     width: 14rem;
     margin: 30px auto 30px auto !important;
+  }
+  
+  .section-title-right-products {
+    border-left: 1px solid #efece8;
   }
 
   /***** Footer *****/
@@ -1937,6 +1942,7 @@ hr {
   .section-title-left {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: transparent !important;
   }
   
   .section-content-left {
@@ -1994,6 +2000,10 @@ hr {
     width: 14rem;
     margin: 30px auto 30px auto !important;
   }
+  
+  .section-title-right-products {
+    border-left: 1px solid #efece8;
+  }
 
   /***** Footer *****/
   
@@ -2024,6 +2034,20 @@ hr {
   
   .footer-bottom > p {
     font-size: 0.8rem !important;
+  }
+}
+
+/*------------------------------------------------------------------------------
+  Lock landscape
+------------------------------------------------------------------------------*/
+@media screen and (orientation:landscape) {
+  #container {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    width: 100% ;
+    height: 100% ;
+    overflow: scroll;
   }
 }
 
